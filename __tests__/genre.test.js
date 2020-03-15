@@ -2,7 +2,7 @@ const app = require("../src/app");
 const supertest = require("supertest");
 const request = supertest(app);
 const { DELETE_SUCCESS, NOT_FOUND } = require("../src/constants/message");
-const endpoint = "/genres";
+const endpoint = "api/v1/genres";
 
 describe("Genre Endpoints", () => {
   it("Should return a property called genres", async done => {

@@ -2,7 +2,7 @@ const app = require("../src/app");
 const supertest = require("supertest");
 const request = supertest(app);
 const { DELETE_SUCCESS, NOT_FOUND } = require("../src/constants/message");
-const endpoint = "/movies";
+const endpoint = "api/v1/movies";
 
 describe("Movies Endpoints", () => {
   it("Should return a property called movies", async done => {
