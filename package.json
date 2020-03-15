@@ -1,0 +1,40 @@
+{
+  "name": "movies-rest-api-test",
+  "version": "1.0.0",
+  "description": "Movies and Genres REST API using Microservices, Sequelize, Express, and PostgreSQL",
+  "main": "index.js",
+  "repository": "https://github.com/gssantost/movies-rest-api-test",
+  "author": "Giovanny Santos",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "db:migrate": "npx sequelize db:migrate",
+    "db:migrate:undo": "npx sequelize db:migrate:undo",
+    "db:migrate:undo:all": "npx sequelize db:migrate:undo:all",
+    "db:seed": "npx sequelize db:seed --seed",
+    "db:seed:all": "npx sequelize db:seed:all"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "verbose": true,
+    "modulePaths": [
+      "<rootDir>",
+      "src"
+    ]
+  }
+}

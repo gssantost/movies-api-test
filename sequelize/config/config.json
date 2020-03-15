@@ -1,0 +1,44 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "masterkey",
+    "database": "movies_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "define": {
+      "schema": "public",
+      "underscored": true
+    },
+    "operatorsAliases": false,
+    "migrationStorageTableName": "sequelize_meta",
+    "seederStorageTableName": "sequelize_data"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "masterkey",
+    "database": "movies_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "define": {
+      "schema": "public",
+      "underscored": true
+    },
+    "operatorsAliases": false,
+    "migrationStorageTableName": "sequelize_meta",
+    "seederStorageTableName": "sequelize_data"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "masterkey",
+    "database": "movies_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "define": {
+      "schema": "public",
+      "underscored": true
+    },
+    "operatorsAliases": false,
+    "migrationStorageTableName": "sequelize_meta",
+    "seederStorageTableName": "sequelize_data"
+  }
+}
