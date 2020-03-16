@@ -2,3 +2,5 @@
 node_modules/
 # Others
 .env
+.git.save
+logs/

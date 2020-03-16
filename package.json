@@ -7,14 +7,18 @@
   "author": "Giovanny Santos",
   "license": "MIT",
   "scripts": {
+    "start": "node src/index.js",
     "start:dev": "nodemon src/index.js",
     "test": "jest",
     "test:watch": "jest --watch",
+    "db:start": "SENTENCE=db:create node scripts/index.js && npx sequelize db:migrate && npx sequelize db:seed:all",
     "db:migrate": "npx sequelize db:migrate",
     "db:migrate:undo": "npx sequelize db:migrate:undo",
     "db:migrate:undo:all": "npx sequelize db:migrate:undo:all",
     "db:seed": "npx sequelize db:seed --seed",
-    "db:seed:all": "npx sequelize db:seed:all"
+    "db:seed:all": "npx sequelize db:seed:all",
+    "db:create": "SENTENCE=db:create node scripts/index.js",
+    "db:drop": "SENTENCE=db:drop node scripts/index.js"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
@@ -22,7 +26,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^7.18.2",
-    "sequelize": "^5.21.5"
+    "sequelize": "^5.21.5",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "jest": "^25.1.0",
