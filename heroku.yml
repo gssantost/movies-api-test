@@ -8,4 +8,4 @@ build:
   config:
     DATABASE_URL: postgres://postgres:postgres@db:5432/movies_test
 run:
-  web: yarn start:dev
+  web: DATABASE_URL=postgres://postgres:postgres@db:5432/movies_test yarn start:dev
