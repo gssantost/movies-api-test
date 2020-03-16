@@ -6,6 +6,6 @@ build:
   docker:
     web: Dockerfile
   config:
-    NODE_ENV: production
+    DATABASE_URL: postgres://postgres:postgres@db:5432/movies_test
 run:
   web: yarn start:dev
