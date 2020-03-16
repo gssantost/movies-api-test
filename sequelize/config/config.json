@@ -9,7 +9,6 @@
       "schema": "public",
       "underscored": true
     },
-    "operatorsAliases": false,
     "migrationStorageTableName": "sequelize_meta",
     "seederStorageTableName": "sequelize_data"
   },
@@ -23,7 +22,6 @@
       "schema": "public",
       "underscored": true
     },
-    "operatorsAliases": false,
     "migrationStorageTableName": "sequelize_meta",
     "seederStorageTableName": "sequelize_data"
   },
@@ -37,7 +35,6 @@
       "schema": "public",
       "underscored": true
     },
-    "operatorsAliases": false,
     "migrationStorageTableName": "sequelize_meta",
     "seederStorageTableName": "sequelize_data"
   }

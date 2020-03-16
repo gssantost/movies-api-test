@@ -3,7 +3,12 @@ const { sequelize } = require("./models");
 const PORT = +process.env.PORT;
 
 (async function() {
-  await sequelize.sync({ alter: true });
+  try {
+    await sequelize.sync({ alter: true });
+  } catch (err) {
+    console.log(err);
+    throw err;
+  }
 })();
 
 app.listen(PORT, () => {
